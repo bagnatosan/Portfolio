@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Bagnato | Desarrollador Backend</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Canvas de Fondo 3D Interactivo -->
+    <canvas id="canvas3d"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-text">sb<span class="dot">.</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">Sobre Mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact" class="nav-cta">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="badge">Disponible para nuevos proyectos</div>
+                <h1 class="hero-title">Santiago Bagnato</h1>
+                <h2 class="hero-subtitle">Desarrollador Backend <span class="divider">|</span> Estudiante UTN</h2>
+                <p class="hero-desc">
+                    Especializado en el ecosistema <strong>.NET Core (C#)</strong> y <strong>SQL (MariaDB/MySQL)</strong>. Enfocado en la escritura de código altamente mantenible, escalable y eficiente bajo principios SOLID y arquitecturas limpias.
+                </p>
+                <div class="social-links-hero">
+                    <a href="https://github.com/bagnatosan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/santiago-bagnato-860118309" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:bagnatosan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+5491123785347" aria-label="Teléfono"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#about" class="btn btn-secondary">Sobre Mí</a>
+                </div>
+            </div>
+            <div class="hero-3d-visual">
+                <!-- Tarjeta 3D interactiva que rota al pasar el mouse -->
+                <div class="card-3d-interactive" id="card3d">
+                    <div class="card-3d-inner">
+                        <div class="card-3d-front">
+                            <div class="glow-effect"></div>
+                            <div class="icon-group-3d">
+                                <i class="fa-solid fa-cubes-three-d main-icon"></i>
+                            </div>
+                            <span class="tech-tag csharp">C#</span>
+                            <span class="tech-tag net">.NET</span>
+                            <span class="tech-tag git">Git</span>
+                            <span class="tech-tag sql">SQL</span>
+                            <span class="tech-tag docker">Docker</span>
+                            <span class="tech-tag laravel">Laravel</span>
+                            <h3>UTN Programmer</h3>
+                            <p>Tecnicatura en Programación</p>
+                            <span class="date">Julio 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <span class="section-tag">Perfil Profesional</span>
+                <h2 class="section-title">Sobre Mí</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-card card">
+                    <p>
+                        Estudiante avanzado de la <strong>Tecnicatura Universitaria en Programación</strong> en la Universidad Tecnológica Nacional (UTN FRH), finalizando en julio de 2026. Con un perfil proactivo y bases lógicas sumamente sólidas, me destaco por mi capacidad para analizar y resolver problemas de alta complejidad de forma ágil y estructurada.
+                    </p>
+                    <p>
+                        Mi enfoque principal es el desarrollo backend, aplicando metodologías ágiles (Scrum), buenas prácticas (Clean Code), principios SOLID y arquitecturas limpias. Además, incorporo tecnologías modernas como Docker en mis despliegues y soluciones en tiempo real utilizando SignalR, buscando escribir siempre código escalable y eficiente.
+                    </p>
+                </div>
+                <div class="education-timeline card">
+                    <h3>Formación Académica</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2024 — Julio 2026</span>
+                            <h4>Tecnicatura Universitaria en Programación</h4>
+                            <p class="timeline-subtitle">UTN FRH</p>
+                            <p class="timeline-desc">Orientada al desarrollo integral de software, estructuras de datos y lógica avanzada en C, C++ y C#.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2025</span>
+                            <h4>Oracle Academy Certification</h4>
+                            <p class="timeline-subtitle">Introduction to SQL & PL/SQL Program</p>
+                            <p class="timeline-desc">Fundamentos de SQL, modelado relacional estructurado, procedimientos almacenados, triggers y programación procedimental en Oracle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Proyecto 1: EDQ -->
+                <div class="project-card card" data-tilt>
+                    <div class="project-header">
+                        <i class="fa-solid fa-shield-halved project-icon neon-green"></i>
+                        <div>
+                            <h3>EDQ - Equipos sin Discusiones</h3>
+                            <div style="margin-top: 6px;">
+                                <span class="project-badge-inline"><i class="fa-brands fa-google-play"></i> Próximamente en Play Store</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Plataforma inteligente y PWA para organizar partidos de fútbol. Utiliza un algoritmo heurístico local en C# para armar formaciones equilibradas basándose en el nivel individual, eliminando discusiones y emparejando los partidos al instante.
+                    </p>
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>.NET Core 10</span>
+                        <span>SignalR</span>
+                        <span>MariaDB</span>
+                        <span>TypeScript</span>
+                        <span>PWA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://edqapp.duckdns.org" target="_blank" class="link-btn"><i class="fa-solid fa-globe"></i> Web App</a>
+                        <a href="https://github.com/bagnatosan/edq" target="_blank" class="link-btn secondary"><i class="fa-brands fa-github"></i> Repositorio</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Cocinet -->
+                <div class="project-card card" data-tilt>
+                    <div class="project-header">
+                        <i class="fa-solid fa-utensils project-icon neon-cyan"></i>
+                        <h3>Cocinet - Gestión de Pedidos</h3>
+                    </div>
+                    <p class="project-desc">
+                        Aplicación web flexible diseñada para microemprendedores gastronómicos. Facilita la toma de pedidos, gestión semanal de clientes y costeo inteligente de productos basado en recetas cargadas dinámicamente según la materia prima.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://cocinet.duckdns.org" target="_blank" class="link-btn"><i class="fa-solid fa-globe"></i> Web App</a>
+                        <a href="#" class="link-btn secondary disabled"><i class="fa-solid fa-lock"></i> Privado</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <span class="section-tag">Competencias</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category card">
+                    <h3>Hard Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-solid fa-code"></i> Lenguajes: <strong>C#, C, C++, PHP, SQL (MariaDB, MySQL, PL-SQL)</strong></li>
+                        <li><i class="fa-solid fa-layer-group"></i> Backend Frameworks: <strong>.NET Core, ASP.NET Core, Laravel</strong></li>
+                        <li><i class="fa-solid fa-shapes"></i> Arquitectura y Patrones: <strong>Principios SOLID, Clean Architecture</strong></li>
+                        <li><i class="fa-solid fa-database"></i> Bases de Datos: <strong>MySQL, MariaDB, Oracle Database</strong></li>
+                        <li><i class="fa-solid fa-code-fork"></i> Control de Versiones: <strong>Git, GitHub</strong></li>
+                    </ul>
+                </div>
+                <div class="skills-category card">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Prácticas: <strong>Mentalidad orientada a Clean Code y principios SOLID</strong></li>
+                        <li><i class="fa-solid fa-users-gear"></i> Metodologías: <strong>Scrum y Desarrollo Ágil</strong></li>
+                        <li><i class="fa-solid fa-brain"></i> Lógica: <strong>Diseño de algoritmos y optimización</strong></li>
+                        <li><i class="fa-solid fa-wrench"></i> Resolución: <strong>Enfoque en escalabilidad y eficiencia</strong></li>
+                        <li><i class="fa-solid fa-language"></i> Idiomas: <strong>Inglés técnico profesional (B2 Upper Intermediate)</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <span class="section-tag">Conectemos</span>
+                <h2 class="section-title">Contacto</h2>
+            </div>
+            <div class="contact-card card">
+                <h3>¿Tenés una propuesta o consulta?</h3>
+                <p>Estoy disponible para entrevistas laborales, oportunidades de desarrollo backend y colaboraciones profesionales en la zona de Buenos Aires y remoto.</p>
+                <div class="contact-methods">
+                    <a href="mailto:bagnatosan@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> bagnatosan@gmail.com</a>
+                    <a href="https://linkedin.com/in/santiago-bagnato-860118309" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="tel:+5491123785347" class="contact-btn"><i class="fas fa-phone"></i> +54 9 11 2378-5347</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>&copy; 2026 Santiago Bagnato.</p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
