@@ -543,6 +543,14 @@ body {
     align-items: center;
     gap: 6px;
     margin-top: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-badge-inline:hover {
+    background: rgba(158, 255, 0, 0.2);
+    border-color: var(--neon-green);
+    box-shadow: 0 0 10px rgba(158, 255, 0, 0.3);
 }
 
 .project-header {
