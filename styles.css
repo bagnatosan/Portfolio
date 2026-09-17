@@ -346,6 +346,42 @@ body {
     color: #000;
 }
 
+.tech-tag.python {
+    background: #3776ab;
+    color: #fff;
+    top: 25px;
+    left: 20px;
+}
+
+.tech-tag.powerbi {
+    background: #f2c811;
+    color: #000;
+    top: 25px;
+    right: 20px;
+}
+
+.tech-tag.dax {
+    background: #9eff00;
+    color: #000;
+    top: 125px;
+    right: 20px;
+}
+
+.tech-tag.pandas {
+    background: #150458;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    top: 215px;
+    left: 20px;
+}
+
+.tech-tag.ml {
+    background: #ff5722;
+    color: #fff;
+    top: 215px;
+    right: 20px;
+}
+
 .tech-tag.csharp {
     background: #512bd4;
     color: #fff;
